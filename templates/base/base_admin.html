@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% include "base/style.html" %}
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+    {% include "base/navbar.html" %}
+    {% include "base/sidebar.html" %}
+    {% block content %}{% endblock %}
+    {% include "base/footer.html" %}
+    <div>
+        {% include "base/script.html" %}
+        {% block jquery %}{% endblock %}
+</body>
+</html>
